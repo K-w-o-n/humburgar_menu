@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.line {
+  height: 5px;
+  width: 50px;
+  background-color: whitesmoke;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+
+.overlayMenu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #042a2b;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container {
+  margin-top: 100px;
+  max-width: 1000px;
+  
+  position: relative;
+}
+.humburgarMenuContainer {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.line2,.line1,.line3,.overlayMenu {
+    transition: all .5s ease;
+}
+.hideLine2 {
+    opacity: 0;
+}
+.rotatePlus45deg {
+    transform: rotate(45deg) translate(4px, 9px);
+}
+.rotateMinus45deg {
+    transform: rotate(-45deg) translate(4px, -9px);
+}
+.showOverlayMenu {
+  opacity: 1;
+}
+li {
+  list-style: none;
+  font-size: 35px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  color: teal;
+  transition: transform  .5s ease;
+}
+.moveLiTagUp {
+  transform: translateY(-10px);
+}
+li:hover {
+  opacity: 0.7;
+}
+
